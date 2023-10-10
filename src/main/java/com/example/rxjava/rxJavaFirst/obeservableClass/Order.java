@@ -1,4 +1,4 @@
-package com.example.rxjava.rxJavaFirst;
+package com.example.rxjava.rxJavaFirst.obeservableClass;
 
 public class Order {
     private String value;
