@@ -10,6 +10,7 @@ import java.util.concurrent.Future;
 
 public class obServableTest {
     public void emit(){
+        //인자 값을 순서대로 발행
         Observable.just("Hello", "RXJava2").subscribe(System.out::println);
     }
     
@@ -42,6 +43,7 @@ public class obServableTest {
     public void fromArray(){
         System.out.println("====fromArray====");
         Integer[] arr = {100, 200, 300};
+        //인자값 한번에 발행
         Observable<Integer> source = Observable.fromArray(arr);
         source.subscribe(System.out::println);
     }
